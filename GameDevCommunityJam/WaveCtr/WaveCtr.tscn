@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://WaveCtr/WaveCtr.gd" type="Script" id=1]
+[ext_resource path="res://Font/Minecraftory.tres" type="DynamicFont" id=2]
+
+[node name="WaveCtr" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer"]
+anchor_right = 1.0
+margin_bottom = 112.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/CenterContainer"]
+margin_left = 538.0
+margin_top = 36.0
+margin_right = 742.0
+margin_bottom = 75.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WaveDisplay" type="Label" parent="CanvasLayer/CenterContainer/VBoxContainer"]
+margin_right = 204.0
+margin_bottom = 39.0
+custom_fonts/font = ExtResource( 2 )
+text = "Wave number"
+align = 1
